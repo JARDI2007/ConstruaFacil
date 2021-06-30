@@ -17,11 +17,53 @@ public class TestaCalc{
         int resultadoAtual = Calc.somarDoisNumeros(num1, num2);
 
         // 3 - Validar - Then
-        assertEquals(resultadoEsperado,resultadoAtual);
-    }
-    @Test
-    public void testarMain (){
+        System.out.println("O resultado esperado é " + resultadoEsperado + "e o resultado atual é" + resultadoAtual);
 
+        assertEquals(resultadoAtual,resultadoEsperado);
+    }
+
+    @Test
+    public void testarSubtrairDoisNumeros (){
+
+        int num1 = 6;
+        int num2 = 2;
+        int resultadoEsperado = 4;
+
+        int resultadoAtual = Calc.subtrairDoisNumeros(num1, num2);
+
+        System.out.println("O resultado esperado é " + resultadoEsperado + "e o resultado atual é" + resultadoAtual);
+
+        assertEquals(resultadoAtual, resultadoEsperado);
+
+    }
+
+    @Test
+    public void testarMultiplicarDoisNumeros () {
+
+        int num1 = 3;
+        int num2 = 2;
+        int resultadoEsperado = 6;
+
+        int resultadoAtual = Calc.multiplicarDoisNumeros(num1, num2);
+
+        System.out.println("O resultado esperado é " + resultadoEsperado + "e o resultado atual é" + resultadoAtual);
+
+        assertEquals(resultadoAtual, resultadoEsperado);
+
+    }
+
+    @Test
+    public void testarDividirDoisNumeros () {
+
+        int num1 = 6;
+        int num2 = 2;
+        int resultadoEsperado = 3;
+
+        int resultadoAtual = Calc.dividirDoisNumeros(num1, num2);
+
+        System.out.println("O resultado esperado é " + resultadoEsperado + "e o resultado atual é" + resultadoAtual);
+
+        assertEquals(resultadoAtual, resultadoEsperado);
 
     }
 
